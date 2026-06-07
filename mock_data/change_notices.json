@@ -1,0 +1,99 @@
+{
+  "@odata.context": "https://windchill-demo/Windchill/servlet/odata/ChangeMgmt/$metadata#ChangeNotices",
+  "value": [
+    {
+      "ID": "OR:wt.change2.WTChangeOrder2:300001",
+      "Number": "CN-2024-0047",
+      "Title": "Bearing Lubrication Jet Orifice Correction",
+      "State": "RELEASED",
+      "Priority": "HIGH",
+      "Category": "Safety",
+      "Description": "Corrects drawing error that resulted in undersized lubrication jet orifice (0.5mm actual vs 0.9mm design) on ENG-BEARING-005. Root cause analysis documented in DOC-FAIL-REPORT-004. This is a mandatory safety action.",
+      "Reason": "Premature bearing failure at 4,200 hours during accelerated life testing traced to lubricant starvation from undersized oil jet orifice on main shaft bearing.",
+      "AffectedParts": [
+        {
+          "PartNumber": "ENG-BEARING-005",
+          "PartName": "Main Shaft Bearing Assembly",
+          "Action": "REDESIGN",
+          "Disposition": "Rework oil jet orifice to 0.9mm diameter per revised drawing"
+        }
+      ],
+      "AffectedDocuments": [
+        {
+          "DocNumber": "DOC-FAIL-REPORT-004",
+          "DocName": "Failure Analysis Report - Bearing Spall 2024-09"
+        }
+      ],
+      "InitiatedBy": "james.wilson@company.com",
+      "ApprovedBy": "chief.engineer@company.com",
+      "ReleaseDate": "2024-10-15T12:00:00Z",
+      "EffectivityDate": "2024-10-20T00:00:00Z",
+      "ModifyStamp": "2024-10-15T12:00:00Z"
+    },
+    {
+      "ID": "OR:wt.change2.WTChangeOrder2:300002",
+      "Number": "CN-2024-0052",
+      "Title": "FADEC Software Update - Improved EGT Limiting Algorithm",
+      "State": "RELEASED",
+      "Priority": "MEDIUM",
+      "Category": "Performance Improvement",
+      "Description": "Updates FADEC software to version 3.2.1 with improved exhaust gas temperature (EGT) limiting algorithm. New algorithm reduces EGT exceedances by 40% compared to previous version through predictive limiting logic.",
+      "Reason": "Customer feedback and flight data analysis indicates EGT limiting algorithm causes unnecessary power reductions during high-altitude cruise. New predictive algorithm improves fuel efficiency by 0.3% while maintaining safety margins.",
+      "AffectedParts": [
+        {
+          "PartNumber": "FUEL-CTRL-009",
+          "PartName": "Full Authority Digital Engine Controller",
+          "Action": "SOFTWARE UPDATE",
+          "Disposition": "Update software to v3.2.1. Load via ACARS maintenance data link."
+        }
+      ],
+      "AffectedDocuments": [
+        {
+          "DocNumber": "DOC-FADEC-SRS-005",
+          "DocName": "FADEC System Requirements Specification",
+          "Action": "Update REQ-LIM-003 to reflect improved hysteresis values"
+        }
+      ],
+      "InitiatedBy": "raj.mehta@company.com",
+      "ApprovedBy": "certification.manager@company.com",
+      "ReleaseDate": "2024-11-01T09:00:00Z",
+      "EffectivityDate": "2024-11-15T00:00:00Z",
+      "ModifyStamp": "2024-11-01T09:00:00Z"
+    },
+    {
+      "ID": "OR:wt.change2.WTChangeOrder2:300003",
+      "Number": "CN-2024-0058",
+      "Title": "Combustion Chamber Liner Material Upgrade",
+      "State": "INWORK",
+      "Priority": "MEDIUM",
+      "Category": "Reliability Improvement",
+      "Description": "Upgrades combustion chamber liner material from Nimonic 263 to CM247LC directionally solidified alloy for improved high-temperature oxidation resistance. Expected to extend time on wing from 12,000 to 18,000 hours.",
+      "Reason": "Borescope inspections show oxidation cracking on combustion liner at 10,000-12,000 hours service life. New CM247LC material provides superior oxidation resistance at temperatures above 1,100°C. Will reduce maintenance costs and improve aircraft dispatch reliability.",
+      "AffectedParts": [
+        {
+          "PartNumber": "ENG-COMBUSTOR-006",
+          "PartName": "Annular Combustion Chamber",
+          "Action": "MATERIAL CHANGE",
+          "Disposition": "New production parts use CM247LC. Existing parts maintain current material until retirement."
+        }
+      ],
+      "AffectedDocuments": [
+        {
+          "DocNumber": "DOC-ENG-SPEC-001",
+          "DocName": "Engine Assembly Specification",
+          "Action": "Update section 4.1 to add CM247LC to approved hot section materials list"
+        },
+        {
+          "DocNumber": "DOC-MAT-CERT-003",
+          "DocName": "Material Certification - Titanium Alloy Ti-6Al-4V",
+          "Action": "Create new material certification for CM247LC"
+        }
+      ],
+      "InitiatedBy": "anna.patel@company.com",
+      "ApprovedBy": null,
+      "ReleaseDate": null,
+      "EffectivityDate": null,
+      "ModifyStamp": "2025-01-05T10:00:00Z"
+    }
+  ]
+}

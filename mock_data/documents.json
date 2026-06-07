@@ -1,0 +1,95 @@
+{
+  "@odata.context": "https://windchill-demo/Windchill/servlet/odata/DocMgmt/$metadata#Documents",
+  "value": [
+    {
+      "ID": "OR:wt.doc.WTDocument:200001",
+      "Number": "DOC-ENG-SPEC-001",
+      "Name": "Engine Assembly Specification",
+      "State": "RELEASED",
+      "Version": "B",
+      "Type": "Specification",
+      "Description": "Master specification document for the turbofan engine assembly. Defines design requirements, performance targets, interface definitions, and manufacturing tolerances.",
+      "Organization": "Engine Division",
+      "Author": "john.smith@company.com",
+      "ModifyStamp": "2024-11-10T09:00:00Z",
+      "PrimaryContent": {
+        "FileName": "engine_assembly_spec_rev_B.pdf",
+        "Format": "application/pdf",
+        "FileSize_kb": 4820,
+        "TextContent": "Engine Assembly Specification Rev B\n\n1. SCOPE\nThis specification defines the design and performance requirements for the CF-500 turbofan engine assembly. The engine is designed to produce 22,000 lbf thrust for commercial narrow-body aircraft applications.\n\n2. PERFORMANCE REQUIREMENTS\n2.1 Thrust: 22,000 lbf (sea level static, ISA conditions)\n2.2 Bypass Ratio: 5.5:1\n2.3 Overall Pressure Ratio: 45:1\n2.4 Turbine Entry Temperature: 1,650°C maximum\n2.5 Specific Fuel Consumption: 0.57 lb/hr/lbf (cruise conditions)\n2.6 Dry Weight: 5,500 kg maximum\n\n3. INTERFACE REQUIREMENTS\n3.1 Engine mount points conform to SAE AS1222 standard\n3.2 Fuel system interface: MIL-DTL-5624 JP-4 compatible\n3.3 Electrical interface: 28V DC and 115V 400Hz AC per MIL-STD-704F\n3.4 Bleed air extraction: Stage 8 and Stage 14 compressor ports\n\n4. MATERIAL REQUIREMENTS\n4.1 Hot section components: Nickel superalloys (Inconel 718, Hastelloy X)\n4.2 Cold section rotating parts: Titanium alloys (Ti-6Al-4V)\n4.3 Fan blades: Carbon fiber reinforced polymer (CFRP)\n4.4 All materials to comply with REACH and RoHS regulations\n\n5. MANUFACTURING TOLERANCES\n5.1 Blade tip clearances: 0.25-0.45 mm\n5.2 Bearing bore tolerances: IT6 per ISO 286\n5.3 Shaft roundness: 0.005 mm max\n\n6. TESTING REQUIREMENTS\n6.1 Engine acceptance test per MIL-E-5007\n6.2 Endurance testing: 2,000 hours minimum\n6.3 Bird strike compliance: FAA AC 33.76"
+      }
+    },
+    {
+      "ID": "OR:wt.doc.WTDocument:200002",
+      "Number": "DOC-MAINT-MANUAL-002",
+      "Name": "Engine Maintenance Manual - Line Maintenance",
+      "State": "RELEASED",
+      "Version": "C",
+      "Type": "Manual",
+      "Description": "Line maintenance procedures for the CF-500 turbofan engine. Covers scheduled maintenance tasks, inspections, and replacement procedures at transit and overnight stops.",
+      "Organization": "Technical Publications",
+      "Author": "emily.zhang@company.com",
+      "ModifyStamp": "2025-01-02T14:00:00Z",
+      "PrimaryContent": {
+        "FileName": "engine_maintenance_manual_line_rev_C.pdf",
+        "Format": "application/pdf",
+        "FileSize_kb": 12350,
+        "TextContent": "Engine Maintenance Manual - Line Maintenance Rev C\n\nCHAPTER 1 - GENERAL INFORMATION\n1.1 Purpose\nThis manual provides instructions for line maintenance of the CF-500 turbofan engine. All tasks in this manual may be performed at the gate or hangar without engine removal.\n\n1.2 Safety Precautions\nWARNING: Ensure engine is shut down and fuel shutoff valve is closed before performing any maintenance.\nCAUTION: Do not rotate fan blades by hand. Use only approved turning equipment.\n\nCHAPTER 2 - SCHEDULED MAINTENANCE\n2.1 Transit Check (Every flight)\n- Visual inspection of engine inlet for FOD\n- Check oil level (quantity must be 7-10 quarts)\n- Inspect fan blades for nicks and damage per AMM 72-21-01\n- Check for fluid leaks (oil, fuel, hydraulic)\n\n2.2 Overnight Check (Daily)\n- All transit check items\n- Borescope inspection of first stage fan blades\n- Drain water from fuel system\n- Check bleed air ducting for security\n- Inspect thrust reverser for cracks and delamination\n\n2.3 Weekly Check\n- All overnight check items\n- Replace oil filter if delta-P indicator is activated\n- Inspect engine mounts for wear and corrosion\n- Check FADEC built-in test (BIT) for fault codes\n\nCHAPTER 3 - COMPONENT REPLACEMENT\n3.1 Oil Filter Replacement\nInterval: 500 flight hours or when delta-P indicator pops\nProcedure:\n1. Shut down engine and wait 30 minutes for cooling\n2. Place drain pan under oil filter housing\n3. Remove filter housing cap (torque: 35 Nm)\n4. Remove and discard filter element (Part No. OIL-FILTER-CF500)\n5. Install new filter - verify O-ring is seated\n6. Torque cap to 35 Nm\n7. Run engine and check for leaks\n\n3.2 Igniter Plug Replacement\nInterval: 3,000 flight hours\nPart Numbers: IGN-PLUG-L (left) IGN-PLUG-R (right)\nProcedure:\n1. Discharge igniter capacitor using shorting tool\n2. Disconnect igniter lead (anti-vibration lockwire)\n3. Remove igniter plug with socket P/N 97A3456\n4. Gap new plug to 1.5-1.8 mm\n5. Install and torque to 20 Nm, safety wire\n\nCHAPTER 4 - FAULT ISOLATION\n4.1 High EGT at Take-off\nProbable causes:\n- Contaminated fuel nozzles - clean or replace\n- Compressor stall - check variable geometry schedule\n- Turbine blade loss - borescope inspection required\n- Bleed air leak - inspect stage 8 and 14 ports"
+      }
+    },
+    {
+      "ID": "OR:wt.doc.WTDocument:200003",
+      "Number": "DOC-MAT-CERT-003",
+      "Name": "Material Certification - Titanium Alloy Ti-6Al-4V",
+      "State": "RELEASED",
+      "Version": "A",
+      "Type": "Certificate",
+      "Description": "Material certification and test reports for titanium alloy Ti-6Al-4V used in engine frame and compressor disc manufacturing.",
+      "Organization": "Materials Engineering",
+      "Author": "raj.mehta@company.com",
+      "ModifyStamp": "2024-05-20T11:30:00Z",
+      "PrimaryContent": {
+        "FileName": "mat_cert_Ti64_batch_2024_A.pdf",
+        "Format": "application/pdf",
+        "FileSize_kb": 890,
+        "TextContent": "Material Certification Report\nMaterial: Titanium Alloy Ti-6Al-4V (Grade 5)\nBatch Number: TI-2024-A-0047\nSupplier: Timet Corporation\nSpecification: AMS 4928 / AMS 4965\n\nCHEMICAL COMPOSITION (Weight %)\nTitanium: Balance\nAluminum: 6.04\nVanadium: 4.12\nIron: 0.18 (max 0.30)\nOxygen: 0.17 (max 0.20)\nNitrogen: 0.008 (max 0.05)\nHydrogen: 0.003 (max 0.015)\nCarbon: 0.006 (max 0.10)\nOther elements, each: <0.10\nOther elements, total: <0.40\n\nMECHANICAL PROPERTIES (Room Temperature)\nUltimate Tensile Strength: 1,000 MPa (min: 897 MPa) - PASS\nYield Strength (0.2%): 896 MPa (min: 828 MPa) - PASS\nElongation: 14.5% (min: 10%) - PASS\nReduction in Area: 38.2% (min: 25%) - PASS\nHardness: 33 HRC (max: 36 HRC) - PASS\n\nMICROSTRUCTURE\nCondition: Solution Treated and Aged (STA)\nGrain Size: ASTM 7 (fine equiaxed alpha)\nAlpha-Beta microstructure confirmed - acceptable\n\nNON-DESTRUCTIVE TESTING\nUltrasonic Inspection: Per AMS 2630, Class A - PASS\nDye Penetrant Inspection: Per AMS 2647 - PASS\nNo defects found\n\nCERTIFICATION\nThis material meets the requirements of AMS 4928 Rev S and AMS 4965 Rev M.\nApproved for use in: ENG-FRAME-001, ENG-SHAFT-002 (via AMS 4965)\nExpiry: Material properties valid for 2 years from test date\nTest Date: 2024-05-15\nCertified by: Quality Assurance Manager, Timet Corporation"
+      }
+    },
+    {
+      "ID": "OR:wt.doc.WTDocument:200004",
+      "Number": "DOC-FAIL-REPORT-004",
+      "Name": "Failure Analysis Report - Bearing Spall 2024-09",
+      "State": "RELEASED",
+      "Version": "A",
+      "Type": "Failure Analysis Report",
+      "Description": "Failure analysis report for main shaft bearing assembly ENG-BEARING-005 that experienced early spallation during accelerated life testing. Root cause identified as lubricant oil starvation.",
+      "Organization": "Engineering Analysis",
+      "Author": "james.wilson@company.com",
+      "ModifyStamp": "2024-10-05T15:00:00Z",
+      "PrimaryContent": {
+        "FileName": "failure_analysis_bearing_2024_09.pdf",
+        "Format": "application/pdf",
+        "FileSize_kb": 3200,
+        "TextContent": "Failure Analysis Report\nDocument Number: DOC-FAIL-REPORT-004\nPart Affected: ENG-BEARING-005 (Main Shaft Bearing Assembly)\nFailure Date: 2024-09-03\nTest Hours at Failure: 4,200 hours (design life 20,000 hours)\n\n1. DESCRIPTION OF FAILURE\nDuring accelerated life testing at Rig Test Cell 3, the main shaft bearing exhibited spallation on the inner raceway. Surface pitting was observed on 6 of 26 rolling elements. Test was halted at 4,200 equivalent service hours when vibration levels exceeded alarm threshold of 15 mm/s RMS.\n\n2. PHYSICAL EXAMINATION\n2.1 Visual Inspection\n- Spalling on inner raceway: 15mm diameter area at 6 o'clock position\n- Bearing balls: surface pitting on 6 balls (Grade 3 damage per ABMA standard)\n- Cage: intact, no deformation\n- Outer raceway: no damage observed\n\n2.2 SEM Analysis\nScanning electron microscopy showed:\n- Fatigue crack initiation at subsurface carbide inclusion\n- Crack propagation in rolling contact direction\n- Final fracture mode: ductile tearing\n\n2.3 Oil Analysis\nOil samples taken at 100, 500, 1000, 2000, 4000 hours:\n- At 4,000 hours: iron particles = 45 ppm (alarm limit: 25 ppm)\n- At 4,200 hours (failure): iron particles = 120 ppm\n- Conclusion: progressive bearing wear prior to catastrophic spall\n\n3. ROOT CAUSE ANALYSIS (5-Why)\nWhy 1: Spallation occurred → Contact stress exceeded material fatigue limit\nWhy 2: High contact stress → Insufficient oil film between ball and raceway\nWhy 3: Thin oil film → Lubricant starvation at bearing\nWhy 4: Lubricant starvation → Oil feed jet diameter undersized (0.5 mm actual vs. 0.9 mm design)\nWhy 5: Wrong jet size → Drawing error on Component Drawing DWG-BEAR-005-003 Rev A\nRoot Cause: Drafting error resulted in undersized lubrication jet orifice\n\n4. CORRECTIVE ACTIONS\n4.1 Immediate: Quarantine all ENG-BEARING-005 assemblies manufactured with Rev A drawing\n4.2 Short-term: Issue Engineering Change Notice ECN-2024-0047 to correct jet orifice to 0.9 mm\n4.3 Long-term: Add lubrication jet inspection to acceptance test procedure\n\n5. RECOMMENDATIONS\n- Revise part drawing DWG-BEAR-005-003 to Rev B with correct orifice size\n- Update QC inspection to include jet orifice diameter verification\n- Re-test redesigned bearing to confirm life target of 20,000 hours"
+      }
+    },
+    {
+      "ID": "OR:wt.doc.WTDocument:200005",
+      "Number": "DOC-FADEC-SRS-005",
+      "Name": "FADEC System Requirements Specification",
+      "State": "RELEASED",
+      "Version": "C",
+      "Type": "Requirements Specification",
+      "Description": "Software requirements specification for the Full Authority Digital Engine Controller (FADEC) system. Defines functional, performance, and safety requirements per DO-178C Level A.",
+      "Organization": "Avionics Division",
+      "Author": "raj.mehta@company.com",
+      "ModifyStamp": "2024-11-25T10:00:00Z",
+      "PrimaryContent": {
+        "FileName": "fadec_srs_rev_C.pdf",
+        "Format": "application/pdf",
+        "FileSize_kb": 7640,
+        "TextContent": "FADEC System Requirements Specification Rev C\nDocument: DOC-FADEC-SRS-005\nDevelopment Assurance Level: DO-178C Level A\n\n1. SYSTEM OVERVIEW\nThe CF-500 FADEC is a dual-channel digital control system that provides complete authority over engine operation. The system eliminates mechanical hydromechanical units and provides precise fuel control, variable geometry scheduling, and health monitoring.\n\n2. FUNCTIONAL REQUIREMENTS\n2.1 Fuel Control\nREQ-FC-001: System shall compute fuel flow command within 10 ms of power lever angle change\nREQ-FC-002: System shall maintain N1 speed within ±0.5% of demanded speed\nREQ-FC-003: System shall limit EGT to 960°C (takeoff limit) with ±5°C accuracy\nREQ-FC-004: System shall provide automatic engine acceleration from idle to max in <5 seconds\n\n2.2 Variable Geometry Control\nREQ-VG-001: System shall schedule variable inlet guide vanes (VIGVs) as a function of N1 and ambient conditions\nREQ-VG-002: System shall detect VIGV position error >2° and trigger fault isolation\nREQ-VG-003: Variable bleed valves shall be controlled to prevent compressor stall\n\n2.3 Engine Limiting\nREQ-LIM-001: System shall prevent N1 overspeed above 104% N1 rated speed\nREQ-LIM-002: System shall prevent N2 overspeed above 105% N2 rated speed\nREQ-LIM-003: Oil temperature limit shall be enforced at 155°C with 0°C hysteresis\nREQ-LIM-004: Oil pressure low limit shall be 40 PSI with 5 PSI hysteresis\n\n3. PERFORMANCE REQUIREMENTS\n3.1 Processing\nREQ-PERF-001: Control loop execution rate: 80 Hz (12.5 ms period)\nREQ-PERF-002: Sensor reading latency: <2 ms from sensor input to control algorithm\nREQ-PERF-003: ARINC 429 output refresh rate: 50 Hz for primary parameters\n\n3.2 Reliability\nREQ-REL-001: System probability of loss of thrust control: <1×10⁻⁹ per flight hour\nREQ-REL-002: Dual-channel architecture shall provide continued operation with single channel failure\nREQ-REL-003: MTBF for electronic hardware: minimum 20,000 hours\n\n4. SAFETY REQUIREMENTS\n4.1 Hazard Classification\nEngine in-flight shutdown: Hazardous per ARP4761\nLoss of thrust control: Catastrophic per ARP4761\n\n4.2 Architecture\nSEQ-ARCH-001: Dual redundant channels with cross-channel data link\nSEQ-ARCH-002: Dissimilar hardware in each channel (different ASIC suppliers)\nSEQ-ARCH-003: Independent power supplies for each channel\n\n5. INTERFACE REQUIREMENTS\n5.1 Cockpit Interface\n- Thrust Lever Angle (TLA) input: ARINC 429\n- Engine display output: ARINC 429 labels 100-199\n- Maintenance data: ACARS via ARINC 429\n\n5.2 Engine Sensor Inputs\n- N1 speed: dual magnetic pick-ups\n- N2 speed: dual magnetic pick-ups\n- EGT: 8× Type K thermocouples, averaged\n- Fuel flow: dual turbine flow meters\n- Oil pressure: 2× piezoelectric pressure transducers"
+      }
+    }
+  ]
+}

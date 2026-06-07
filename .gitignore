@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.so
+.venv/
+venv/
+env/
+
+# Env & secrets
+.env
+
+# Qdrant local data
+qdrant_storage/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Model cache (sentence-transformers downloads here)
+~/.cache/huggingface/

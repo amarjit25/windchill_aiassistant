@@ -1,0 +1,136 @@
+{
+  "@odata.context": "https://windchill-demo/Windchill/servlet/odata/ProdMgmt/$metadata#Parts",
+  "BOMs": [
+    {
+      "ParentPart": {
+        "ID": "OR:wt.part.WTPart:100001",
+        "Number": "ENG-FRAME-001",
+        "Name": "Main Engine Frame",
+        "State": "RELEASED"
+      },
+      "Components": [
+        {
+          "PartUse": {
+            "Quantity": 1,
+            "Unit": "EA",
+            "ReferenceDesignator": "COMBUSTOR-ZONE",
+            "FindNumber": "10"
+          },
+          "Part": {
+            "ID": "OR:wt.part.WTPart:100006",
+            "Number": "ENG-COMBUSTOR-006",
+            "Name": "Annular Combustion Chamber",
+            "State": "RELEASED"
+          },
+          "Components": []
+        },
+        {
+          "PartUse": {
+            "Quantity": 2,
+            "Unit": "EA",
+            "ReferenceDesignator": "BEARING-FWD",
+            "FindNumber": "20"
+          },
+          "Part": {
+            "ID": "OR:wt.part.WTPart:100005",
+            "Number": "ENG-BEARING-005",
+            "Name": "Main Shaft Bearing Assembly",
+            "State": "INWORK"
+          },
+          "Components": []
+        },
+        {
+          "PartUse": {
+            "Quantity": 1,
+            "Unit": "EA",
+            "ReferenceDesignator": "SHAFT-ASSY",
+            "FindNumber": "30"
+          },
+          "Part": {
+            "ID": "OR:wt.part.WTPart:100002",
+            "Number": "ENG-SHAFT-002",
+            "Name": "Drive Shaft Assembly",
+            "State": "RELEASED"
+          },
+          "Components": [
+            {
+              "PartUse": {
+                "Quantity": 24,
+                "Unit": "EA",
+                "ReferenceDesignator": "BLADE-STAGE1",
+                "FindNumber": "10"
+              },
+              "Part": {
+                "ID": "OR:wt.part.WTPart:100003",
+                "Number": "ENG-BLADE-003",
+                "Name": "Compressor Fan Blade",
+                "State": "RELEASED"
+              },
+              "Components": []
+            },
+            {
+              "PartUse": {
+                "Quantity": 4,
+                "Unit": "EA",
+                "ReferenceDesignator": "SEAL-HPT",
+                "FindNumber": "20"
+              },
+              "Part": {
+                "ID": "OR:wt.part.WTPart:100004",
+                "Number": "ENG-SEAL-004",
+                "Name": "High Pressure Turbine Seal",
+                "State": "RELEASED"
+              },
+              "Components": []
+            }
+          ]
+        },
+        {
+          "PartUse": {
+            "Quantity": 1,
+            "Unit": "EA",
+            "ReferenceDesignator": "HYD-PUMP",
+            "FindNumber": "40"
+          },
+          "Part": {
+            "ID": "OR:wt.part.WTPart:100007",
+            "Number": "HYD-PUMP-007",
+            "Name": "Hydraulic Pump Assembly",
+            "State": "RELEASED"
+          },
+          "Components": []
+        },
+        {
+          "PartUse": {
+            "Quantity": 1,
+            "Unit": "EA",
+            "ReferenceDesignator": "ELEC-GEN",
+            "FindNumber": "50"
+          },
+          "Part": {
+            "ID": "OR:wt.part.WTPart:100008",
+            "Number": "ELEC-GEN-008",
+            "Name": "Integrated Drive Generator",
+            "State": "RELEASED"
+          },
+          "Components": []
+        },
+        {
+          "PartUse": {
+            "Quantity": 1,
+            "Unit": "EA",
+            "ReferenceDesignator": "FADEC-CTRL",
+            "FindNumber": "60"
+          },
+          "Part": {
+            "ID": "OR:wt.part.WTPart:100009",
+            "Number": "FUEL-CTRL-009",
+            "Name": "Full Authority Digital Engine Controller",
+            "State": "RELEASED"
+          },
+          "Components": []
+        }
+      ]
+    }
+  ]
+}
