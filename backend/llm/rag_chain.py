@@ -4,6 +4,7 @@ RAG chain — orchestrates: query → semantic search → LLM → structured ans
 LLM provider is selected by LLM_PROVIDER in .env:
   claude           → Anthropic API (default)
   ollama           → local Ollama server (no internet required)
+  litellm          → LiteLLM proxy (OpenAI /chat/completions format)
   claudesonnet4.6  → Bedrock-hosted Claude via internal gateway
   llama3-8b        → on-premise Llama3 8B
   llama3-70b       → on-premise Llama3 70B
@@ -22,6 +23,10 @@ def _ask_llm(query: str, context_chunks: list[dict]) -> dict:
     if config.LLM_PROVIDER == "ollama":
         from backend.llm.ollama_client import ask_ollama
         return ask_ollama(query=query, context_chunks=context_chunks)
+
+    if config.LLM_PROVIDER == "litellm":
+        from backend.llm.litellm_client import ask_litellm
+        return ask_litellm(query=query, context_chunks=context_chunks)
 
     if config.LLM_PROVIDER in _GATEWAY_MODELS:
         from backend.llm.bedrock_proxy_client import ask_bedrock_proxy

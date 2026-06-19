@@ -39,6 +39,12 @@ LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "claude")
 OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 OLLAMA_MODEL: str = os.getenv("OLLAMA_MODEL", "llama3.1")
 
+# ── LiteLLM proxy settings (only used when LLM_PROVIDER=litellm) ────────────
+LITELLM_URL: str = os.getenv("LITELLM_URL", "")
+LITELLM_MODEL: str = os.getenv("LITELLM_MODEL", "claude-sonnet-4-6")
+LITELLM_API_KEY: str = os.getenv("LITELLM_API_KEY", "")
+LITELLM_SSL_VERIFY: bool = os.getenv("LITELLM_SSL_VERIFY", "true").lower() != "false"
+
 # ── On-premise / Bedrock gateway settings ───────────────────────────────────
 # Each model has its own invoke URL since they are hosted on different infra.
 # claudesonnet4.6 → Bedrock via internal API gateway
