@@ -9,10 +9,13 @@ LLM provider is selected by LLM_PROVIDER in .env:
   llama3-8b        → on-premise Llama3 8B
   llama3-70b       → on-premise Llama3 70B
 """
-from typing import Optional
+from typing import TYPE_CHECKING, Optional
 
 from backend import config
 from backend.search.retriever import semantic_search
+
+if TYPE_CHECKING:
+    from backend.api.auth import AuthenticatedUser
 
 # Models routed through the internal gateway client
 _GATEWAY_MODELS = {"claudesonnet4.6", "llama3-8b", "llama3-70b"}
@@ -42,15 +45,17 @@ def answer_query(
     top_k: int = None,
     filter_type: Optional[str] = None,
     filter_state: Optional[str] = None,
+    user: Optional["AuthenticatedUser"] = None,
 ) -> dict:
     """
-    Full RAG pipeline: query → retrieve → generate.
+    Full RAG pipeline: query → retrieve → ACL filter → generate.
 
     Args:
         query: Natural language question from the user
         top_k: How many context chunks to retrieve (default: config value)
         filter_type: Optional filter — "part", "document", "bom", "change_notice"
         filter_state: Optional lifecycle filter — e.g. "RELEASED"
+        user: Authenticated user — used for ACL filtering in windchill auth mode
 
     Returns:
         dict with:
@@ -66,6 +71,11 @@ def answer_query(
         filter_type=filter_type,
         filter_state=filter_state,
     )
+
+    # ── Step 1b: ACL filter — remove objects the user can't see in Windchill
+    if user is not None:
+        from backend.api.auth import filter_by_acl
+        chunks = filter_by_acl(chunks, user)
 
     if not chunks:
         return {
